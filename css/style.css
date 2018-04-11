@@ -52,3 +52,20 @@
         dd.clear { float: none; 
             margin: 0; 
             height: 15px; }
+
+
+    
+.competencias .barres li{
+    margin-bottom: 21px;
+    position: relative;
+    
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul{
+    display: block;
+    
+}
