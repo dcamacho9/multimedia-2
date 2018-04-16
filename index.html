@@ -14,6 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link type="text/css" rel="stylesheet" href="css/bootstaptheme.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 </head>
 
 <body>
@@ -182,6 +183,8 @@
             <div class=" col-md-12">
                 <div class="col-md-6">
                 <h5><span class="glyphicon glyphicon-briefcase"></span> COMPETENCIAS PROFESIONALES</h5>
+                   
+                    
             </div>
                 <div class="col-md-3">
                     <h5>IDIOMAS</h5>
@@ -197,80 +200,39 @@
                 
                 
     
-            
-       <!-- <div class="competencias">
-				<h3>Competencias Profesionales</h3>
-				<ul class="barres">
-					<li data-skills="80">Compétences 1<span style="width: 80%;"></span><span style="overflow: hidden; width: 80%;"></span></li>
-					<li data-skills="60">Compétences 2<span style="width: 60%;"></span><span style="overflow: hidden; width: 60%;"></span></li>
-					<li data-skills="75">Compétences 3<span style="width: 75%;"></span><span style="overflow: hidden; width: 75%;"></span></li>
-					<li data-skills="40">Compétences 4<span style="width: 40%;"></span><span style="overflow: hidden; width: 40%;"></span></li>
-					<li data-skills="95">Compétences 5<span style="width: 95%;"></span><span style="overflow: hidden; width: 95%;"></span></li>
-				</ul>
-			</div>
-    
-        
-        <div class="clear"></div>
-        
-        <dl>
-            <dd class="clear"></dd>
-            
-            <dt>Coordinador Logístico</dt>
-            <dd>
-                <h3>Withering Madness University - Planet Vhoorl</h3>
-                <p><strong>Major:</strong> Public Relations<br/>
-                   <strong>Minor:</strong> Scale Tending</p>
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>Skills</dt>
-            <dd>
-                <h2>Office skills</h2>
-                <p>Office and records management, database administration, event organization, customer support, travel coordination</p>
-                
-                <h2>Computer skills</h2>
-                <p>Microsoft productivity software (Word, Excel, etc), Adobe Creative Suite, Windows</p>
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>Experience</dt>
-            <dd>
-                <h2>Doomsday Cult <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span></h2>
-                <ul>
-                    <li>Inspired and won highest peasant death competition among servants</li>
-                    <li>Helped coordinate managers to grow cult following</li>
-                    <li>Provided untimely deaths to all who opposed</li>
-                </ul>
-                
-                <h2>The Watering Hole <span>Bartender/Server - Milwaukee, WI - 2009</span></h2>
-                <ul>
-                    <li>Worked on grass-roots promotional campaigns</li>
-                    <li>Reduced theft and property damage percentages</li>
-                    <li>Janitorial work, Laundry</li>
-                </ul> 
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>Hobbies</dt>
-            <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>References</dt>
-            <dd>Available on request</dd>
-            
-            <dd class="clear"></dd>
-        </dl>
-        
-        <div class="clear"></div>
-    
-    </div>-->
     
     </div>
             </div>
+            
+            <script>
+   google.load("visualization", "1", {packages:["corechart"]});
+   google.setOnLoadCallback(dibujarGrafico);
+   function dibujarGrafico() {
+     // Tabla de datos: valores y etiquetas de la gráfica
+     var data = google.visualization.arrayToDataTable([
+       ['Texto', 'Valor numérico'],
+       ['Texto1', 20.21],
+       ['Texto2', 4.28],
+       ['Texto3', 17.26],
+       ['Texto4', 10.25]    
+     ]);
+     var options = {
+       title: 'Nuestro primer ejemplo con Google Charts'
+     }
+     // Dibujar el gráfico
+     new google.visualization.ColumnChart( 
+     //ColumnChart sería el tipo de gráfico a dibujar
+       document.getElementById('GraficoGoogleChart-ejemplo-1')
+     ).draw(data, options);
+   }
+ </script> 
+            
+            
+    </div>
+    
+    
+    
+    
 </body>
 
 </html>
