@@ -69,3 +69,6 @@ ul{
     display: block;
     
 }
+li ul{
+    color: blue
+}
