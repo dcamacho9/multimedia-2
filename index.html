@@ -23,7 +23,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="col-md-8">
+                <div class="col-md-5">
                     <!-- Microformats! -->
 
                     <h3>Daniel Camacho Jimenez</h3>
@@ -33,29 +33,32 @@
                     <h3>Ingeniero de Software</h3>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="col-md-3">
+                <div class="col-md-5">
+                    <div class="col-md-5">
                         <div id="extra information" class="vcard">
                             <p>
                                 <span class="glyphicon glyphicon-earphone"></span>
-                                <span class="tel">555-666-7777</span><br />
+                                <span class="tel">616385568</span><br />
 
                                 <span class="glyphicon glyphicon-envelope"></span>
-                                <a class="email" href="mailto:greatoldone@lovecraft.com"> dani</a><br/>
+                                <a class="email" href="mailto:greatoldone@lovecraft.com">dcam@gmail.com</a><br/>
 
-                                <span class="glyphicon glyphicon-link">
-                    <span class ="tel">likedin</span>
+                                <span class="glyphicon glyphicon-link"><span class ="tel">http://likedin</span>
                                 </span><br/>
 
-                                <span class="glyphicon glyphicon-home"><span class ="tel"> Dirección</span>
+                                <span class="glyphicon glyphicon-home"><span class ="tel">C/OsaMena4</span>
                                 </span><br/>
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    
+                </div>
+				<div class="col-md-2">
+					<div class="col-md-2">
                         <img src="images/cthulu.png">
                     </div>
-                </div>
+				</div>	
+				
             </div>
         </div>
 
@@ -144,7 +147,11 @@
                     </div>
                     <div class=" col-md-12">
                         <div class="col-md-6">
-                            <h4><span class="glyphicon glyphicon-user"></span> COMPETENCIAS PROFESIONALES</h4>
+                            <h4><span class="glyphicon glyphicon-paperclip"></span> COMPETENCIAS PROFESIONALES</h4>
+							
+							<br/>
+							
+							<h5><span class="glyphicon glyphicon-blackboard"></span>Habilidades en lenguajes de programación</h5>
                             
                             <div id="GraficoGoogleChart-ejemplo-1" style="width: 800px; height: 600px">
                                 <div class="col-md-3">
@@ -156,7 +163,7 @@
                         </div>
                     </div>
                     <div class="col-md-12">
-                                
+						<h5><span class="glyphicon glyphicon-globe"></span> Idiomas</h5>
                                 <div id="piechart_3d" style="width: 1050; height: 980;"></div>
                             </div>
                     <div class="col-md-12">
@@ -171,6 +178,7 @@
                     </div>
                 </div>
                 <div class="col-md-2">
+					 <h4><span class="glyphicon glyphicon-user"></span>COMO SOY</h4>
                     <img src="images/mapa2.PNG" class="pull-right right">
                 </div>
 				
@@ -184,7 +192,7 @@
                     function dibujarGrafico() {
                         // Tabla de datos: valores y etiquetas de la gráfica
                         var data = google.visualization.arrayToDataTable([
-                            ['Texto', 'Valor numérico'],
+                            ['Texto', '% Habilidad'],
                             ['C', 95],
                             ['C++', 40],
                             ['Pascal', 80],
@@ -195,7 +203,7 @@
 
                         ]);
                         var options = {
-                            title: 'Habilidades en lenguajes de programación'
+                            title: ''
                         }
                         // Dibujar el gráfico
                         new google.visualization.ColumnChart(
@@ -222,7 +230,7 @@
                         ]);
 
                         var options = {
-                            title: 'Idiomas',
+                            title: '',
                             is3D: true,
                         };
 
